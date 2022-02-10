@@ -1,2 +1,3 @@
-# webcore
-WebCore Project 
+# WebCore
+
+WebCore framework for web based  Projects

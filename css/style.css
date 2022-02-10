@@ -1,0 +1,212 @@
+/**
+* Template Name: VBSweb
+*
+*  ------------------------VBS Stylesheet---------------------
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  text-decoration: none;
+  color: #49b5e7;
+}
+
+a:hover {
+  color: #76c7ed;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis", sans-serif;
+}
+# weight
+.weight {font-size: 46px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
+  
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 0px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+}
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* ------------------------------------------------------*/
+/*  Indicator Yellow Buttons */
+.indcButton {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background-color:#f7f759;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 30px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffee66;
+}
+/*  Indicator Yellow Buttons */
+.indcButton:hover {
+	background-color:#e0e048;
+}
+/*  Indicator Yellow Buttons */
+.indcButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* ------------------------------------------------------*/
+/*  Modal Javascript Wrapper CSS */
+#modal_wrapper.overlay::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+  }
+
+  #modal_window {
+    display: none;
+    z-index: 200;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 360px;
+    overflow: auto;
+    padding: 10px 20px;
+    background: #fff;
+    border: 5px solid #999;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  #modal_wrapper.overlay #modal_window {
+    display: block;
+  }
+  
+/* ------------------------------------------------------*/
+
+/* CSS Button - EXIT*/
+.button8{
+display:inline-block;
+padding:0.2em 1.45em;
+/* border:0.15em solid #CCCCCC; */
+/*box-sizing: border-box; */ 
+text-decoration:none;
+font-family:'Segoe UI','Roboto',sans-serif;
+font-weight:400;
+color:#000000;
+background-color:#FFFF00;
+text-align:center;
+position:relative;
+}
+.button8:hover{
+border-color:#7a7a7a;
+}
+.button8:active{
+background-color:#FFFF00;
+}
+
+
+
+/* Create a custom VBS checkbox */
+.checkmark {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border: solid gray 1px;
+  border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #666666;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 0.4rem;
+  top: 0.2rem;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/*--------------------------------------------------------------
+# General Modal 
+--------------------------------------------------------------*/
+
